@@ -54,6 +54,13 @@ nav {
   justify-content: space-between;
   padding: 20px;
 }
+nav .ham-mnu {
+  display: none;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #454b45;
+  text-transform: normal;
+}
 nav h1 {
   font-size: 2rem;
   font-weight: 500;
@@ -297,6 +304,50 @@ footer .links ul li a {
   color: #454b45;
   text-transform: uppercase;
   letter-spacing: 3px;
+}
+
+@media (max-width: 768px) {
+  header .ham-mnu {
+    display: block;
+  }
+  header .navi {
+    display: none;
+  }
+  header .main-header .si-name {
+    font-size: 2rem;
+  }
+  header .main-header .h-text {
+    font-size: 1rem;
+  }
+
+  main .main-1 {
+    height: auto;
+    padding: 40px 5px;
+  }
+  main .main-2 {
+    flex-direction: column;
+  }
+  main .main-2 .main-2-pic {
+    width: 100%;
+  }
+  main .main-2 .main-2-text {
+    width: 100%;
+  }
+
+  footer {
+    flex-direction: column;
+    height: auto;
+  }
+  footer .social {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  footer .links ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

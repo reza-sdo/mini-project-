@@ -40,6 +40,10 @@ nav{
     justify-content: space-between;
     padding: 20px;
 
+    .ham-mnu{
+        display: none;
+        @include textStyle(2rem, 300, $textColor, normal)
+    }
     h1{
         @include textStyle(2rem, 500, $textColor, uppercase);
     }
@@ -268,4 +272,62 @@ footer{
             }
         }
     }
+}
+
+@include media(M){
+
+    header{
+        .ham-mnu{
+            display: block;
+        }
+        .navi{
+            display: none;
+        }
+        .main-header{
+            .si-name{
+                font-size: 2rem;
+            }
+            .h-text{
+                font-size: 1rem;
+            }
+        }
+
+    }
+    main{
+        .main-1{
+            height: auto;
+            padding: 40px 5px;
+        }
+        .main-2{
+            flex-direction: column;
+            
+            .main-2-pic{
+                width: 100%;
+                
+            }
+            .main-2-text{
+                width: 100%;
+                
+            }
+        }
+    }
+    
+    footer{
+        flex-direction: column;
+        height: auto;
+        
+        .social{
+            width: 100%;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .links{
+            ul{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+    
 }
