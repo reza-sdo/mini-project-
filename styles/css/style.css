@@ -121,6 +121,9 @@ main .main-1 .cards {
   align-content: center;
   gap: 20px;
 }
+main .main-1 .cards a {
+  text-decoration: none;
+}
 main .main-1 .cards .card {
   width: 250px;
   height: 400px;
@@ -246,6 +249,10 @@ main .main-1 .cards .card p {
   color: #454b45;
   text-transform: uppercase;
   letter-spacing: 5px;
+}
+.main-3 a:hover {
+  background-color: #454b45;
+  color: #fff;
 }
 
 footer {

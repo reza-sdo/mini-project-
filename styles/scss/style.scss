@@ -101,7 +101,9 @@ main{
             align-items: center;
             align-content: center;
             gap:20px;
-
+            a{
+                text-decoration: none;
+                }
             .card{
                 width: 250px;
                 height: 400px;
@@ -205,6 +207,10 @@ main{
         text-decoration: none;
         @include textStyle(1rem, 600, $textColor, uppercase);
         letter-spacing: 5px;
+        &:hover{
+            background-color: $textColor;
+            color:$primeriColor;
+        }
 
     }
 }
