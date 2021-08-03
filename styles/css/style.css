@@ -260,6 +260,7 @@ main .main-1 .cards .card p {
   color: #454b45;
   text-transform: uppercase;
   letter-spacing: 5px;
+  transition: all 0.15s linear;
 }
 .main-3 a:hover {
   background-color: #454b45;
@@ -285,11 +286,20 @@ footer .social a {
 footer .social a:last-child {
   border: none;
 }
+footer .social a .in {
+  transition: all 0.15s linear;
+}
 footer .social a .in:hover {
   color: #d6085e;
 }
+footer .social a .tele {
+  transition: all 0.15s linear;
+}
 footer .social a .tele:hover {
   color: #00e1ff;
+}
+footer .social a .tw {
+  transition: all 0.15s linear;
 }
 footer .social a .tw:hover {
   color: #006eff;

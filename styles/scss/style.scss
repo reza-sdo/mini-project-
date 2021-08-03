@@ -214,6 +214,7 @@ main{
         text-decoration: none;
         @include textStyle(1rem, 600, $textColor, uppercase);
         letter-spacing: 5px;
+        transition: all 0.15s linear;
         &:hover{
             background-color: $textColor;
             color:$primeriColor;
@@ -237,21 +238,25 @@ footer{
             padding: 5px 20px;
             border-right: 2px solid $textColor;
             
+            
             &:last-child{
                 border: none;
 
             }
             .in{
+                transition: all 0.15s linear;
                 &:hover{
                     color:rgb(214, 8, 94);
                 }
             }
             .tele{
+                transition: all 0.15s linear;
                 &:hover{
                     color: rgb(0, 225, 255)
                 }
             }
             .tw{
+                transition: all 0.15s linear;
                 &:hover{
                     color: rgb(0, 110, 255)
                 }
