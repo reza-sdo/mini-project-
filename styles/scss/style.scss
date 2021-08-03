@@ -1,0 +1,265 @@
+@import "varibels";
+@import "mixins";
+
+*{
+    @include overal;
+}
+header{
+    background-image: url(../../img/header.jpg);
+    margin: 10px;
+    height: calc(100vh - 20px);
+    @include BG(fixed);
+    @include boxStyle;
+    margin-bottom: 30px;
+
+    .main-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        height: 80%;
+        width: 100%;
+
+        h1{
+            @include textStyle(4rem, 500, $textColor, uppercase);
+            letter-spacing: 15px;
+            margin-bottom: 10px;
+        }
+        h3{
+            @include textStyle(1.3rem, 500, $textColor, uppercase);
+            margin-bottom: 20px;
+        }
+        .line{
+            @include line(100px)
+        }
+    }
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+    h1{
+        @include textStyle(2rem, 500, $textColor, uppercase);
+    }
+    .navi{
+        display: flex;
+
+        li{
+            list-style-type: none;
+            margin-left: 5px;
+            padding: 8px 15px;
+            transition: all 0.15s linear;
+            a{
+                text-decoration: none;
+                @include textStyle(0.8rem, 600, $textColor, uppercase);
+                
+            }
+            &:last-child{
+                border: 2px solid $lineColor;
+                &:hover{
+                    background-color: $textColor;
+                    border: 2px solid transparent;
+                    a{
+                        color:$primeriColor;
+                    }
+                    
+
+                }
+            }
+        }
+    }
+    
+}
+
+main{
+
+
+    .main-1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background-color: $bgColor;
+        height: 100vh;
+        h3{
+            @include textStyle(2rem, 600, $textColor, uppercase);
+            margin-bottom: 20px
+        }
+        .line{
+            @include line(100px);
+            margin-bottom: 50px;
+        }
+        .cards{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+            width: 100%;
+            justify-content: center;
+            margin: 0 auto;
+            align-items: center;
+            align-content: center;
+            gap:20px;
+
+            .card{
+                width: 250px;
+                height: 400px;
+                background-color: $primeriColor;
+                @include boxStyle;
+                
+
+
+                img{
+                    width: 100%
+                }
+                .line{
+                    margin: 30px auto;
+                }
+                p{
+                    padding: 20px;
+                    @include textStyle(1rem, 100, $textColor, normal);
+                    @include text (25px, 10px);
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+.main-2{
+    display: flex;
+    height: 800px;
+    width: 100%;
+    margin-bottom:5px;
+
+    .main-2-pic{
+        width: 50%;
+        height: 100%;
+        background-image: url(../../img/m2-p1.jpg);
+        @include BG(scroll);
+        
+    }
+    .main-2-text{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        padding: 40px;
+        h3{
+            @include textStyle(2rem, 500, $textColor, uppercase);
+            margin-bottom: 30px;
+        }
+        .line{
+            @include line(100px);
+            margin-bottom: 30px;
+        }
+        p{
+            @include textStyle(1rem, 100, $textColor, normal);
+            @include text(25px, 10px)
+        }
+    }
+
+}
+.main-3{
+    width: 100%;
+    height: 500px;
+    background-color: $bgColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    .main-3-h{
+        @include textStyle(2rem, 200, $textColor, uppercase);
+        letter-spacing: 5px;
+        margin-bottom: 10px
+    }
+    .main-3-p{
+        @include text(normal, normal);
+        margin-bottom: 20px;
+
+    }
+    input{
+        width: 350px;
+        height: 40px;
+        align-self: center;
+        padding: 10px;
+        outline: none;
+        border: 1px solid $primeriColor;
+        background-color: $inputColor;
+        margin-bottom: 30px;
+        &::placeholder{
+            @include text(normal, 5px);
+        }
+    }
+    a{
+        line-height: 30px;
+        display: inline-block;
+        padding: 10px 13px;
+        width: 150px;
+        margin: 0 auto;
+        border: 2px solid $textColor;
+        text-decoration: none;
+        @include textStyle(1rem, 600, $textColor, uppercase);
+        letter-spacing: 5px;
+
+    }
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    align-content: center;
+    
+    .social{
+        font-size: 1.8rem;
+        margin-right: 10px;
+         
+        a{
+            text-decoration: none;
+            color: $textColor;
+            padding: 5px 20px;
+            border-right: 2px solid $textColor;
+            
+            &:last-child{
+                border: none;
+
+            }
+            .in{
+                &:hover{
+                    color:rgb(214, 8, 94);
+                }
+            }
+            .tele{
+                &:hover{
+                    color: rgb(0, 225, 255)
+                }
+            }
+            .tw{
+                &:hover{
+                    color: rgb(0, 110, 255)
+                }
+            }
+        }
+
+    }
+    
+    .links{
+        ul{
+            list-style: none;
+            display: flex;
+            li{
+                margin-left: 15px;
+                a{
+                    text-decoration: none;
+                    @include textStyle(1rem, 100, $textColor, uppercase);
+                    letter-spacing: 3px;
+                    
+                }
+            }
+        }
+    }
+}

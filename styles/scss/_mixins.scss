@@ -1,0 +1,36 @@
+@mixin overal {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@mixin textStyle($size, $bold, $color, $caps){
+    font-size: $size;
+    font-weight: $bold;
+    color: $color;
+    text-transform: $caps;
+}
+@mixin text($h, $w){
+    font-family: 'Roboto Slab', serif;
+    line-height: $h;
+    word-spacing: $w;
+}
+@mixin BG($atch){
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: $atch;
+}
+@mixin line($w) {
+    width: $w;
+    height: 2px;
+    background-color: $lineColor ;
+    align-self: center;
+    border-radius: 50%;
+}
+@mixin boxStyle {
+    box-shadow: 
+    0 4px 10px 1px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    
+}
