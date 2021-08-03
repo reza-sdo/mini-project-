@@ -4,6 +4,9 @@
 *{
     @include overal;
 }
+body{
+    scroll-behavior: smooth;
+}
 header{
     background-image: url(../../img/header.jpg);
     margin: 10px;
