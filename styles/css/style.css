@@ -333,6 +333,9 @@ footer .links ul li a {
   main .main-2 .main-2-text {
     width: 100%;
   }
+  main .main-3 input {
+    width: 250px;
+  }
 
   footer {
     flex-direction: column;
