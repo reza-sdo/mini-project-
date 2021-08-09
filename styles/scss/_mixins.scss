@@ -47,13 +47,13 @@
     }
 }
 
-@mixin media($h){
+@mixin mediah($h){
     @if ($h == Mh){
-        @media (max-height: 540px){
+        @media (max-height: 768px){
             @content;
         }
     } @else if ($h == Lh){
-        @media (min-height: 541px){
+        @media (min-height: 768px){
             @content;
         }
     }

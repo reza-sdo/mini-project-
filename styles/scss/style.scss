@@ -303,7 +303,7 @@ footer{
     }
     main{
         .main-1{
-            height: auto;
+            height:1000px;
             padding: 40px 5px;
         }
         .main-2{
@@ -345,7 +345,7 @@ footer{
     
 }
 
-@include media(Mh){
+@include mediah(Mh){
     
     main{
         .main-1{
