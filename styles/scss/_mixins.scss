@@ -46,3 +46,15 @@
         }
     }
 }
+
+@mixin media($h){
+    @if ($h == Mh){
+        @media (max-height: 540px){
+            @content;
+        }
+    } @else if ($h == Lh){
+        @media (min-height: 541px){
+            @content;
+        }
+    }
+}

@@ -344,3 +344,12 @@ footer{
     }
     
 }
+
+@include media(Mh){
+    
+    main{
+        .main-1{
+            height:auto;
+        }
+    }
+}
